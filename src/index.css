@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --white:rgb(245,245,245);
+    --grayLigth:rgb(228,230,235);
+    --grayLigthBorder:rgb(218, 218, 218);
+    --grayDark:rgb(63,74,82);
+    --black:rgb(12,18,28);
+}
+
+.isActive{
+    border-radius: 0.5em;
+    background-color: var(--grayLigth);
+    border: 2px solid var(--grayLigthBorder);
+    font-weight: 600;
+}
+body{
+    background-color: var(--grayLigth);
+    font-family: 'Poppins', sans-serif;
+}
