@@ -1,0 +1,5 @@
+.div2{
+    height: 82vh;
+    background-color: var(--white2);
+    border-top: 2px solid var(--grayLigthBorder);
+}

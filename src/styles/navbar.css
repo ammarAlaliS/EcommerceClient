@@ -2,57 +2,137 @@
     width: 100%;
     min-height: 6rem;
     background-color: var(--white);
-    padding: 0 5em;
-    border-bottom: 2px solid var(--grayLigthBorder);
-
+    /* padding: 0 5em; */
+   
+    background-color: var(--white2);
     display: flex;
+    flex-direction: column;
     align-items: center;
     
 }
 .insideContainer{
-    max-width: 1400px;
+    max-width: 1600px;
     width: 100%;
     margin: auto;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
-    font-size: 1em;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 3.5rem;
+    font-size: 1em;  
 
 }
 .logo{
     color: var(--letterColorIsActive);
-    font-size: 2.5em;
-    margin-right: 2em;
+    font-size: 2.1em;
+    margin-right: 1em;
+    cursor: pointer;
+ 
+}
+.ul{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 0.2em;
+    position: relative;
+}
+.login{
+    font-size: 2em;
+    margin-left: 1em;
+    margin-bottom: -1px;
+    
 }
 
 .link{
-    padding: 0.5em 1em;
-    font-size: 1.2em;
+    padding: 0.5em 0.6em;
+    font-size: 1.1em;
     color: var(--black);
     border-radius: 1em;
-    
+    border: 2px solid ;
+    border-color: transparent;
 }
+.link2{
+    padding: 0.5em 0.6em;
+    font-size: 1em;
+    color: var(--black);
+    border-radius: 1em;
+    border: 2px solid ;
+    border-color: transparent;
+    color: var(--letterColorIsActive);
+}
+
 .hanburger{
     display: none;
 }
 
-@media screen and (max-width:1020px) {
+/* promotion */
+.promotion{
+    width: 100%;
+    min-height: 3rem;
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5em 0em;
+    padding-left: 1.9em;
+    padding-right: 3.5rem;
+
+}
+.button{
+    width: 80px; 
+    padding: 0.4em 0em;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 0.3em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap !important;
+}
+
+.opcions{
+    
+    width: 100%;
+    background-color: var(--grayLigth);
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid var(--grayLigthBorder);
+}
+.items{
+    max-width: 1600px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: start;
+    padding-left: 0.9rem;
+    padding-right: 3.5rem;
+    font-size: 1em;
+
+}
+
+@media screen and (max-width:810px) {
     .ul{
         display: none;
     }
     .logo{
         color: var(--black);
-        font-size: 2.3em;
+        font-size: 2em;
         margin-right: 2em;
     }
     .insideContainer{
-        width: 95%;
+        width: 100%;
     
     }
     .navContainer{
-        padding: 0 1em;
+        
        
     }
     .hanburger{

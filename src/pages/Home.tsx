@@ -1,7 +1,7 @@
-
+import '../styles/home.css'
 function Home() {
   return (
-    <div>Home</div>
+    <div className="div2">Home</div>
   )
 }
 

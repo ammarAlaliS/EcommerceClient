@@ -1,0 +1,35 @@
+
+.div{
+    height: 4em;
+    position: absolute;
+    top: 50px;
+    right: -2.8em;
+    background-color: yellow;
+    border-radius: 0.3em;
+
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    gap: 0.2em;
+    padding: 0 1.5em;
+    background-color: var(--white2);
+    border: 2px solid var(--grayLigthBorder);
+    box-shadow: 0px 6px 10px 3px rgba(0, 0, 0, 0.2);
+
+
+}
+.span{
+    font-size: 1.1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  
+}
+.span:hover{
+    color: var(--hoverLogin);
+}
+
+.user{
+    font-size: 1.5em;
+    color: #014204;
+}

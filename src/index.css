@@ -2,26 +2,45 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
     text-decoration: none;
 }
 
 :root{
-    --white:rgb(245,245,245);
-    --grayLigth:rgb(228,230,235);
+    --white:rgb(252, 252, 252);
+    --white2:rgb(255, 255, 255);
+    --grayLigth:rgb(248, 249, 252);
     --grayLigthBorder:rgb(212, 209, 209);
     --letterColorIsActive: #04364A; 
     --grayDark:rgb(63,74,82);
     --black:rgb(12,18,28);
+    --hoverLogin: #068FFF;
 }
 
 .isActive{
     background-color: var(--grayLigth);
     border: 2px solid var(--grayLigthBorder);
-    font-weight: 600;
-    transition: background-color 0.5s ease;
+    font-weight: 400;
+    transition: background-color 0.2s ease;
     color: var(--letterColorIsActive);
     border-color: var(--grayLigthBorder) !important;
 }
+
+.rotate {
+    transform: rotate(0deg); 
+    transition: transform 0.1s ease-in; 
+    cursor: pointer;
+
+
+}
+
+.rotateDeg90 {
+    transform: rotate(90deg); 
+    color: var(--hoverLogin);
+    
+}
+
+
 body{
     background-color: var(--grayLigth);
     font-family: 'Poppins', sans-serif;
