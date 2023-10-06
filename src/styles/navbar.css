@@ -1,11 +1,17 @@
 .navContainer{
     width: 100%;
+    min-height: 6rem;
     background-color: var(--white);
+    padding: 0 5em;
+    border-bottom: 2px solid var(--grayLigthBorder);
+
+    display: flex;
+    align-items: center;
     
 }
 .insideContainer{
     max-width: 1400px;
-    width: 100% !important;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-wrap: nowrap;
@@ -14,18 +20,88 @@
     padding: 1rem;
     font-size: 1em;
 
-    border-bottom: 2px solid var(--grayLigthBorder);
 }
 .logo{
-    color: var(--black);
+    color: var(--letterColorIsActive);
     font-size: 2.5em;
+    margin-right: 2em;
 }
-.ul{
-    
-}
+
 .link{
     padding: 0.5em 1em;
     font-size: 1.2em;
     color: var(--black);
+    border-radius: 1em;
     
+}
+.hanburger{
+    display: none;
+}
+
+@media screen and (max-width:1020px) {
+    .ul{
+        display: none;
+    }
+    .logo{
+        color: var(--black);
+        font-size: 2.3em;
+        margin-right: 2em;
+    }
+    .insideContainer{
+        width: 95%;
+    
+    }
+    .navContainer{
+        padding: 0 1em;
+       
+    }
+    .hanburger{
+        display: block;
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .ul{
+        display: none;
+    }
+    .logo{
+        color: var(--black);
+        font-size: 0.5em !important;
+        margin-right: 2em;
+    }
+    .insideContainer{
+        width: 100%;
+    
+    }
+    .navContainer{
+        padding: 0 1em;
+       
+    }
+    .hanburger{
+        display: block;
+        font-size: 2em;
+    }
+}
+@media screen and (max-width:500px) {
+    .ul{
+        display: none;
+    }
+    .logo{
+        color: var(--black);
+        font-size: 1.5em !important;
+        margin-right: 2em;
+    }
+    .insideContainer{
+        width: 100%;
+    
+    }
+    .navContainer{
+        padding: 0 1em;
+       
+    }
+    .hanburger{
+        display: block;
+        font-size: 2em;
+    }
 }

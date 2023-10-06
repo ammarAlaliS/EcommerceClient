@@ -1,6 +1,8 @@
 import { Link, useLocation } from 'react-router-dom';
 import '../styles/navbar.css';
 
+import { FaBars } from 'react-icons/fa';
+
 export default function NavBar() {
   const location = useLocation();
 
@@ -14,6 +16,7 @@ export default function NavBar() {
           <Link className={`link ${location.pathname === '/works' ? 'isActive' : ''}`} to="/works">Works</Link>
           <Link className={`link ${location.pathname === '/feedback' ? 'isActive' : ''}`} to="/feedback">Feedback</Link>
         </ul>
+        < FaBars className="hanburger"/>
       </div>
     </nav>
   );
