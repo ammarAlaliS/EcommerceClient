@@ -9,12 +9,14 @@
 :root{
     --white:rgb(252, 252, 252);
     --white2:rgb(255, 255, 255);
-    --grayLigth:rgb(248, 249, 252);
+    --grayLigth:rgb(244, 245, 247);
     --grayLigthBorder:rgb(212, 209, 209);
     --letterColorIsActive: #04364A; 
     --grayDark:rgb(63,74,82);
     --black:rgb(12,18,28);
     --hoverLogin: #068FFF;
+    --productColor:#FF0060;
+    --signInHover: #254df0;
 }
 
 .isActive{
@@ -39,9 +41,14 @@
     color: var(--hoverLogin);
     
 }
+.trasitionScale:hover{
+    transform: scale(1.1);
+
+}
 
 
 body{
     background-color: var(--grayLigth);
     font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
 }

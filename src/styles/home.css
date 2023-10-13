@@ -1,5 +1,11 @@
 .div2{
-    height: 82vh;
+    min-height: 80vh;
     background-color: var(--white2);
     border-top: 2px solid var(--grayLigthBorder);
-}
+   
+} 
+.mainSection{
+    width: 100%;
+    min-height: 30em;
+    
+}  

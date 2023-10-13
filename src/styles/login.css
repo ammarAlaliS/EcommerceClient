@@ -1,35 +1,174 @@
 
 .div{
-    height: 4em;
-    position: absolute;
-    top: 50px;
-    right: -2.8em;
-    background-color: yellow;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+  
+
+
     border-radius: 0.3em;
 
     display: flex;
+    flex-direction: flex;
     justify-content: center ;
     align-items: center;
-    gap: 0.2em;
-    padding: 0 1.5em;
-    background-color: var(--white2);
-    border: 2px solid var(--grayLigthBorder);
-    box-shadow: 0px 6px 10px 3px rgba(0, 0, 0, 0.2);
-
-
-}
-.span{
-    font-size: 1.1em;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s ease;
+    gap: 0.5em;
+    padding: 1em 1.5em;
+    background-color:  rgba(0, 0, 0, 0.616);
+    backdrop-filter: blur(3px);
+    /* background-color: var(--white2); */
+    z-index: 2;
   
-}
-.span:hover{
-    color: var(--hoverLogin);
+
 }
 
-.user{
-    font-size: 1.5em;
-    color: #014204;
+.formBox{
+    max-width: 800px;
+    min-height: 400px;
+    max-height: 500px;
+ 
+    height: 100%;
+    background-color: var(--white2);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-radius: 0.5em;
+    border: 1px solid var(--grayLigthBorder);
+    padding:0 0.5m ;
+
+}
+.formInfo{
+    border-right: 2px solid var(--grayLigth);
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-height: 600px;
+    height: 100%;
+
+}
+.form{
+    max-height: 600px;
+    height: 100%;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    position: relative;
+}
+.userInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+.lineClose{
+    font-size: 1.8em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0.5em 0.5em 0 0;
+    cursor: pointer;
+    color: var(--grayLigthBorder);
+}
+.formTitle{
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+.input{
+    width: 80%;
+    min-height: 2.5em;
+    outline: none;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    border: 1px solid var(--grayLigthBorder);
+    font-size: 0.9em;
+    margin-top: 0.1em;
+}
+.inputIsActive{
+    border: 1px solid var(--hoverLogin);
+}
+.loginButton{
+    padding: 0.5em 1em;
+    border-radius: 9999px;
+    border: 1px solid var(--grayLigthBorder);
+    cursor: pointer;
+    margin-top: 0.1em;
+    font-size: 0.9em;
+    font-weight: 600;
+    background-color: var(--hoverLogin);
+    color: var(--white2);
+    transition: all .5s ease-in-out;
+
+}
+.btn{
+    padding: 0.5em 1em;
+    border-radius: 9999px;
+    border: 1px solid var(--grayLigthBorder);
+    cursor: pointer;
+    margin-top: 0.1em;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: var(--white2);
+    transition: all .5s ease-in-out;
+    width: 80%;
+}
+.btnEmail{
+    background-color: #e1574a;
+}
+.btnApple{
+    background-color: #121212;
+}
+
+.ul2{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    gap: 0.7em;
+    line-height: 1em;
+    border-top: 2px solid var(--grayLigthBorder);
+    padding-top: 1em;
+    margin-top: 1em;
+}
+
+.troubleBox{
+    width: 80%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    font-size: 0.9em;
+}
+.troubleBox >li {
+    margin-top: 1em;
+}
+
+.ul2 >li{
+    width: max-content;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.ul2 >li:hover{
+    font-size: 0.9rem;
+}
+.loginButton:hover{
+  background-color: var(--signInHover);
+  padding: 0.5em 8em;
+}
+.forgotPassword:hover{
+    color: var(--productColor);
+    
+}
+.createAccount:hover{
+    color: var(--hoverLogin);
+    
 }
